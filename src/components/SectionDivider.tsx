@@ -6,9 +6,9 @@ interface SectionDividerProps {
 
 export default function SectionDivider({ title }: SectionDividerProps) {
   return (
-    <div className='flex'>
+    <div className='flex items-center gap-8'>
       <HorizontalDivider width='long' color='primary' />
-      {title}
+      <h2 className='text-2xl font-bold text-black'>{title}</h2>
       <HorizontalDivider width='long' color='primary' />
     </div>
   )
