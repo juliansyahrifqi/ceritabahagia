@@ -1,4 +1,5 @@
 import HeroImage from '../assets/hero-image.svg';
+import Button from './Button';
 
 export default function Hero() {
   return (
@@ -8,11 +9,9 @@ export default function Hero() {
 
         <h1 className='w-full xl:w-[72%] xl:text-[2.5rem] text-3xl font-bold text-white leading-relaxed tracking-wide mt-3 selection:bg-blue-700'>Siapkan Undangan Digitalmu Bersama Kami</h1>
 
-        <p className='text-white mt-8 font-normal text-sm xl:text-md selection:bg-blue-700 tracking-wider'>Bagikan hari dan cerita bahagiamu kepada semua orang</p>
+        <p className='text-white mt-8 font-normal text-sm xl:text-md selection:bg-blue-700 tracking-wider mb-5'>Bagikan hari dan cerita bahagiamu kepada semua orang</p>
 
-        <button className='bg-semigold hover:bg-gold duration-500 rounded-full py-4 px-5 mt-5 font-bold text-hover-gold'>
-          Lihat apa yang kami tawarkan
-        </button>
+        <Button title="Lihat apa yang kami tawarkan" size='medium' isPrimary />
       </div>
 
       <img src={HeroImage} alt="hero-image" />

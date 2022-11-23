@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import Button from './Button';
 
 export default function Navbar() {
   const [ toggleSidebar, setToggleSidebar ] = useState(false);
@@ -16,7 +17,7 @@ export default function Navbar() {
             <h1 className='text-xl text-white font-semibold'>Cerita Bahagia</h1>
           </Link>
 
-          <ul className='flex justify-end gap-14 text-white font-medium'>
+          <ul className='flex justify-end items-center gap-14 text-white font-medium'>
             <li>
               <HashLink 
                 smooth
@@ -61,6 +62,9 @@ export default function Navbar() {
               >
                 Harga
               </HashLink>
+            </li>
+            <li>
+              <Button title="Contact Us" size="small" isPrimary />
             </li>
           </ul>
         </div>
