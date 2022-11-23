@@ -13,7 +13,7 @@ module.exports = {
         'black': '#303030',
         'secondary-black': '636363',
         'hover-gold': '#766930',
-        'blue-primary': '#2993F5'
+        'blue-primary': '#007bff'
       },
       animation: {
         slidein: 'slidein .7s ease-in-out'

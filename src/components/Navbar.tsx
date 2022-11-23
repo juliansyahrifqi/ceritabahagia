@@ -10,7 +10,7 @@ export default function Navbar() {
   
   return (
     <>
-      <nav className='bg-[#2993F5]'>
+      <nav className='bg-blue-primary'>
         <div className='hidden md:flex md:container mx-auto justify-between items-center p-6'>
           <Link to="/" >
             <h1 className='text-xl text-white font-semibold'>Cerita Bahagia</h1>

@@ -4,10 +4,10 @@ import Home from './pages/Home';
 
 function App() {
   return (
-    <div className="flex flex-col h-screen justify-between">
+    <div className="flex flex-col">
       <Navbar />
 
-      <div className="px-4 sm:px-6 xl:px-0 w-full">
+      <div className="w-full">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/fitur" element={<Home />} />
