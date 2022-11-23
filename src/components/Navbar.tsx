@@ -38,8 +38,8 @@ export default function Navbar() {
             <li>
               <HashLink 
                 smooth
-                to="/#fitur" 
-                className={`${location.hash === '#fitur' ? activeClassName : 'hover:text-gold duration-300 text-base'}`}
+                to="/#cerita" 
+                className={`${location.hash === '#cerita' ? activeClassName : 'hover:text-gold duration-300 text-base'}`}
               >
                 Cerita
               </HashLink>
@@ -47,8 +47,8 @@ export default function Navbar() {
             <li>
               <HashLink 
                 smooth
-                to="/#fitur" 
-                className={`${location.hash === '#fitur' ? activeClassName : 'hover:text-gold duration-300 text-base'}`}
+                to="/#portofolio" 
+                className={`${location.hash === '#portofolio' ? activeClassName : 'hover:text-gold duration-300 text-base'}`}
               >
                 Portofolio
               </HashLink>
