@@ -1,26 +1,48 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Link, NavLink, useLocation } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 export default function Navbar() {
   const [ toggleSidebar, setToggleSidebar ] = useState(false);
 
+  let activeClassName = 'text-gold font-bold text-base';
+  const location = useLocation();
+  
   return (
     <>
       <nav className='bg-[#2993F5]'>
         <div className='hidden md:flex md:container mx-auto justify-between items-center p-6'>
-          <Link to="/">
+          <Link to="/" >
             <h1 className='text-xl text-white font-semibold'>Cerita Bahagia</h1>
           </Link>
 
           <ul className='flex justify-end gap-10 text-white font-medium'>
             <li>
-              <Link to="/" className='hover:text-gold duration-300 text-base'>Home</Link>
+              <HashLink 
+                smooth
+                to="/" 
+                className={`${location.hash === '' ? activeClassName : 'hover:text-gold duration-300 text-base'}`}
+              >
+                Home
+              </HashLink>
             </li>
             <li>
-              <Link to="/" className='hover:text-gold duration-300 text-base'>Fitur</Link>
+              <HashLink 
+                smooth
+                to="/#fitur" 
+                className={`${location.hash === '#fitur' ? activeClassName : 'hover:text-gold duration-300 text-base'}`}
+              >
+                Fitur
+              </HashLink>
             </li>
             <li>
-              <Link to="/" className='hover:text-gold duration-300 text-base'>Harga</Link>
+              <HashLink 
+                smooth
+                to="/#harga" 
+                className={`${location.hash === '#harga' ? activeClassName : 'hover:text-gold duration-300 text-base'}`}
+              >
+                Harga
+              </HashLink>
             </li>
           </ul>
         </div>
@@ -56,21 +78,21 @@ export default function Navbar() {
           <div className="sidebar-body flex flex-col h-screen px-5 py-10">
             <ul>
               <li className="mt-2 text-center">
-                <Link to='/' className="text-xl font-semibold text-white" >
+                <NavLink to='/' className="text-xl font-semibold text-white" >
                   HOME
-                </Link>
+                </NavLink>
               </li>
               
               <li className="mt-2 text-center">
-                <Link to='/' className="text-xl font-semibold text-white" >
+                <NavLink to='/' className="text-xl font-semibold text-white" >
                   FITUR
-                </Link>
+                </NavLink>
               </li>
 
               <li className="mt-2 text-center">
-                <Link to='/' className="text-xl font-semibold text-white" >
+                <NavLink to='/' className="text-xl font-semibold text-white" >
                   HARGA
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>

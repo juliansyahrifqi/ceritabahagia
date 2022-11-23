@@ -10,6 +10,7 @@ function App() {
       <div className="px-4 sm:px-6 xl:px-0 w-full">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/fitur" element={<Home />} />
         </Routes>
       </div>
     </div>
