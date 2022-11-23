@@ -16,7 +16,7 @@ export default function Navbar() {
             <h1 className='text-xl text-white font-semibold'>Cerita Bahagia</h1>
           </Link>
 
-          <ul className='flex justify-end gap-10 text-white font-medium'>
+          <ul className='flex justify-end gap-14 text-white font-medium'>
             <li>
               <HashLink 
                 smooth
@@ -33,6 +33,24 @@ export default function Navbar() {
                 className={`${location.hash === '#fitur' ? activeClassName : 'hover:text-gold duration-300 text-base'}`}
               >
                 Fitur
+              </HashLink>
+            </li>
+            <li>
+              <HashLink 
+                smooth
+                to="/#fitur" 
+                className={`${location.hash === '#fitur' ? activeClassName : 'hover:text-gold duration-300 text-base'}`}
+              >
+                Cerita
+              </HashLink>
+            </li>
+            <li>
+              <HashLink 
+                smooth
+                to="/#fitur" 
+                className={`${location.hash === '#fitur' ? activeClassName : 'hover:text-gold duration-300 text-base'}`}
+              >
+                Portofolio
               </HashLink>
             </li>
             <li>
