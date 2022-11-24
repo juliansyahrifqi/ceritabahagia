@@ -12,7 +12,7 @@ export default function Hero() {
 
         <h2 className='text-white mt-8 font-normal text-sm xl:text-md selection:bg-blue-700 tracking-wider mb-5'>Bagikan hari dan cerita bahagiamu kepada semua orang</h2>
 
-        <Button title="Lihat apa yang kami tawarkan" size='medium' isPrimary />
+        <Button title="Lihat apa yang kami tawarkan" size='medium' link="#fitur" linkType="internal" isPrimary />
       </div>
 
       <img src={HeroImage} alt="hero-image" />
