@@ -19,6 +19,8 @@ module.exports = {
         'hover-gold': '#766930',
         'blue-primary': '#007bff',
         'button-secondary': 'rgba(41, 147, 245, 0.3)',
+        'feature-card': 'rgba(41, 147, 245, 0.15)',
+        'feature-hover': 'rgba(41, 147, 245, 0.5)',
       },
       animation: {
         slidein: 'slidein .7s ease-in-out'
