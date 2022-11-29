@@ -1,48 +1,10 @@
 import FeatureCard from './FeatureCard'
 import SectionDivider from './SectionDivider'
-
-const features = [
-  {
-    id: 1,
-    image: '/musik.svg',
-    title: 'Musik',
-    description: 'Bebas memilih musik sesuai dengan keinginan'
-  },
-  {
-    id: 2,
-    image: '/countdown.svg',
-    title: 'Hitung Mundur',
-    description: 'Hitung mundur waktu menuju hari bahagia'
-  },
-  {
-    id: 3,
-    image: '/ucapan.svg',
-    title: 'Kolom Ucapan',
-    description: 'Lihat dan kirim ucapan dan harapan'
-  },
-  {
-    id: 4,
-    image: '/navigasi.svg',
-    title: 'Navigasi Google Maps',
-    description: 'Navigasi google maps ke lokasi acara'
-  },
-  {
-    id: 5,
-    image: '/animasi.svg',
-    title: 'Animasi Website',
-    description: 'Membuat website lebih menarik dan interaktif'
-  },
-  {
-    id: 6,
-    image: '/galeri.svg',
-    title: 'Galeri Foto',
-    description: 'Bebas memilih foto-foto yang ingin ditampilkan'
-  },
-]
+import { features } from '../assets/constant'
 
 export default function Fitur() {
   return (
-    <section className='fitur mt-5 md:container mx-auto' id='fitur'>
+    <section className='fitur my-5 md:container mx-auto' id='fitur'>
       <div className='px-10 md:px-40 py-5 md:py-14'>
         <SectionDivider title="Fitur" />
 
