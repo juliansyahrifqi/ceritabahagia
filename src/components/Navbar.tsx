@@ -48,7 +48,7 @@ export default function Navbar() {
             <li>
               <HashLink 
                 smooth
-                to="/#portofolio" 
+                to="/portofolio" 
                 className={`${location.hash === '#portofolio' ? activeClassName : 'hover:text-gold duration-300 text-base'}`}
               >
                 Portofolio

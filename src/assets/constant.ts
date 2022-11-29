@@ -199,4 +199,19 @@ export const payments = [
     name: 'OVO',
     image: '/ovo-icon.png'
   }
+];
+
+export const portofolios = [
+  {
+    name: 'Aida dan Revo',
+    date: '19 Juni 2021',
+    thumb: '/aida-revo.png',
+    link: "/",
+  }, 
+  {
+    name: 'Laras dan Aldy',
+    date: '5 April 2021',
+    thumb: '/laras-aldy.png',
+    link: '/'
+  }, 
 ]
