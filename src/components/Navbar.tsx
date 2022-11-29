@@ -64,7 +64,7 @@ export default function Navbar() {
               </HashLink>
             </li>
             <li>
-              <Button title="Contact Us" size="small" link="https://freastofficial.com" linkType="external" isPrimary />
+              <Button title="Contact Us" size="small" link="https://wa.me/628998932302?text=Halo%20admin,%20saya%20ingin%20memesan%20digital%20wedding%20invitation%20" linkType="external" isPrimary />
             </li>
           </ul>
         </div>
@@ -97,8 +97,9 @@ export default function Navbar() {
             </button>
           </div>
       
-          <div className="sidebar-body flex flex-col h-screen px-5 py-10">
-            <ul>
+          <div className="sidebar-body flex flex-col h-screen px-5 py-10 mt-5">
+            <img src="/logo.png" alt="ceritabahagia-logo" className='w-24 mx-auto' />
+            <ul className='mt-4'>
               <li className="mt-2 text-center">
                 <NavLink to='/' className="text-xl font-semibold text-white" >
                   HOME
@@ -106,7 +107,7 @@ export default function Navbar() {
               </li>
               
               <li className="mt-2 text-center">
-                <NavLink to='/' className="text-xl font-semibold text-white" >
+                <NavLink to='/fitur' className="text-xl font-semibold text-white" >
                   FITUR
                 </NavLink>
               </li>
