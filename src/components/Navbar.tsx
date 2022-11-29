@@ -39,15 +39,6 @@ export default function Navbar() {
             <li>
               <HashLink 
                 smooth
-                to="/#cerita" 
-                className={`${location.hash === '#cerita' ? activeClassName : 'hover:text-gold duration-300 text-base'}`}
-              >
-                Cerita
-              </HashLink>
-            </li>
-            <li>
-              <HashLink 
-                smooth
                 to="/portofolio" 
                 className={`${location.hash === '#portofolio' ? activeClassName : 'hover:text-gold duration-300 text-base'}`}
               >
@@ -64,7 +55,7 @@ export default function Navbar() {
               </HashLink>
             </li>
             <li>
-              <Button title="Contact Us" size="small" link="https://wa.me/628998932302?text=Halo%20admin,%20saya%20ingin%20memesan%20digital%20wedding%20invitation%20" linkType="external" isPrimary />
+              <Button title="Hubungi Kami" size="small" link="https://wa.me/628998932302?text=Halo%20admin,%20saya%20ingin%20memesan%20digital%20wedding%20invitation%20" linkType="external" isPrimary />
             </li>
           </ul>
         </div>
@@ -101,21 +92,31 @@ export default function Navbar() {
             <img src="/logo.png" alt="ceritabahagia-logo" className='w-24 mx-auto' />
             <ul className='mt-4'>
               <li className="mt-2 text-center">
-                <NavLink to='/' className="text-xl font-semibold text-white" >
+                <a href="/" className="text-xl font-semibold text-white">
                   HOME
-                </NavLink>
-              </li>
-              
-              <li className="mt-2 text-center">
-                <NavLink to='/fitur' className="text-xl font-semibold text-white" >
-                  FITUR
-                </NavLink>
+                </a>
               </li>
 
               <li className="mt-2 text-center">
-                <NavLink to='/' className="text-xl font-semibold text-white" >
+                <a href="#fitur" className="text-xl font-semibold text-white">
+                  FITUR
+                </a>
+              </li>
+
+              <li className="mt-2 text-center">
+                <a href="/portofolio" className="text-xl font-semibold text-white">
+                PORTOFOLIO
+                </a>
+              </li>
+              
+              <li className="mt-2 text-center">
+                <a href="#harga" className="text-xl font-semibold text-white">
                   HARGA
-                </NavLink>
+                </a>
+              </li>
+
+              <li className='mt-2 text-center'>
+                <Button title='Hubungi Kami' size='large' isPrimary linkType='external' link="https://wa.me/628998932302?text=Halo%20admin,%20saya%20ingin%20memesan%20digital%20wedding%20invitation%20" />
               </li>
             </ul>
           </div>
