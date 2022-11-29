@@ -177,3 +177,26 @@ export const features = [
     description: 'Bebas memilih foto-foto yang ingin ditampilkan'
   },
 ]
+
+export const payments = [
+  {
+    name: 'BCA',
+    image: '/bca-icon.png'
+  },
+  {
+    name: 'MANDIRI',
+    image: '/mandiri-icon.png'
+  },
+  {
+    name: 'BNI',
+    image: '/bni-icon.png'
+  },
+  {
+    name: 'DANA',
+    image: '/dana-icon.png'
+  },
+  {
+    name: 'OVO',
+    image: '/ovo-icon.png'
+  }
+]

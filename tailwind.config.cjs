@@ -21,6 +21,9 @@ module.exports = {
         'button-secondary': 'rgba(41, 147, 245, 0.3)',
         'feature-card': 'rgba(41, 147, 245, 0.15)',
         'feature-hover': 'rgba(41, 147, 245, 0.5)',
+        'footer': '#373737',
+        'square': 'rgba(24, 24, 24, 0.1)',
+        'square-hover': 'rgba(24, 24, 24, 0.5)'
       },
       animation: {
         slidein: 'slidein .7s ease-in-out'
