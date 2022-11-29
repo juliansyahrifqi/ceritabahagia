@@ -1,6 +1,7 @@
 import Fitur from '../components/Fitur'
 import Harga from '../components/Harga'
 import Hero from '../components/Hero'
+import Offering from '../components/Offering'
 import Portofolio from '../components/Portofolio'
 
 export default function Home() {
@@ -13,6 +14,8 @@ export default function Home() {
       <Portofolio />
 
       <Harga />
+
+      <Offering />
     </main>
   )
 }
